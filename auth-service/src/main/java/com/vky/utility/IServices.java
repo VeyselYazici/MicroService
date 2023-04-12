@@ -1,0 +1,14 @@
+package com.vky.utility;
+
+import java.util.Iterator;
+import java.util.List;
+
+public interface IServices<T, ID> {
+    T save (T entity);
+    Iterable<T> saveAll(Iterable<T> entities);
+    T update(T entity);
+    void delete(T entity);
+    void deleteById(ID id);
+    T findById(ID id);
+    List<T> findAll();
+}

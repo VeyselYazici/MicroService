@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: loadbalancer-elasticservice
+spec:
+  selector:
+    elastic: pod-elasticsearch
+  type: ClusterIP
+  ports:
+    - name: elastic-service-one
+      port: 9200
+      targetPort: 9200
+    - name: elastic-service-two
+      port: 9300
+      targetPort: 9300

@@ -1,0 +1,43 @@
+#server:
+#  port: 9090
+#
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/YarismaProjesiDB
+#    username: postgres
+#    password: 123
+
+server:
+  port: 9090
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: veysel
+    password: Aa123456*
+  zipkin:
+    base-url: http://localhost:9411
+    enabled: true
+    service:
+      name: auth-service
+  security:
+    user:
+      name: veyselky
+      password: 123123
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/YarismaProjesiDB'
+    username: postgres
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+raceapplication:
+  url:
+    auth: http://localhost:9090/
+    main: http://localhost:9091/
+    user: http://localhost:9092/

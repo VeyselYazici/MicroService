@@ -1,0 +1,53 @@
+#server:
+#  port: 9091
+#
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/YarismaProjesiDBUser
+#    username: postgres
+#    password: 123
+
+server:
+  port: 9092
+#logging:
+#  level:
+#    org.vky: WARN
+#    org.springframework: TRACE
+#    org.hibernate: WARN
+logging:
+  level:
+#   root: WARN # hepsi icin gecerlidir spring icin paket icin vs uyglamadaki her logu gorebiliriz
+    com.vky: DEBUG  # root u WARN da tutup digerlerini ozellestirebiliriz
+    org.springframework: INFO
+  file:
+    name: user-service-application.log
+    max-file-size: 1MB
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: veysel
+    password: Aa123456*
+  zipkin:
+    base-url: http://localhost:9411
+    enabled: true
+    service:
+      name: user-service
+  redis:
+    host: localhost
+    port: 6379
+  data:
+#    12.10.2022 tarihli video
+    mongodb:
+      host: 34.132.0.50
+      port: 19589
+      database: bilgeyarisma
+      username: bilgeadamuser
+      password: "zoX}YC%'N`|H|>%Wf!41"
+
+raceapplication:
+  url:
+    auth: http://localhost:9090/
+    main: http://localhost:9091/
+    user: http://localhost:9092/

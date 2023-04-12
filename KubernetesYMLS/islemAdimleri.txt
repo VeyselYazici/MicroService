@@ -1,0 +1,43 @@
+İlk olarak postgresql yml olusturulur. Sonra kubectl apply -f [YML ADI]
+Olusan pod icin kubectl exec -it [POD NAME] -- bash
+su postgresql
+createdb [DATABASE ADI]
+
+Auth Service icin ClusterIp olusturuyoruz 9090 portunda yayin yapacak
+Main Service icin ClusterIp olusturuyoruz 9091 portunda yayin yapacak
+User Service icin ClusterIp olusturuyoruz 9092 portunda yayin yapacak
+
+Secret Objesini olustuyoruz
+
+
+
+
+
+***** DİKKAT *****
+MAC cihazlarda build alırken, linux versiyonunun farklı olması nedniyle
+oluşturulan image bulut sistemlerde sorun çıkartabiliyor. bu nedenle builda
+alınan linux versiyonunun özellikle belirtilmesi iş görecektir.
+docker build --platform linux/amd64 --build-arg JAR_FILE=[JAR DOSYASI] -t [DEPLOY NAME] .
+****************
+-- 1- İlk olarak PostgreSQL yml oluşturulur.
+---- oluşan pod için  kubectl exec -it [POD NAME] -- bash
+---- su - postgres
+---- createdb [DATABASE ADI]
+---- exit
+---- exit
+------------------------------------
+-- 2- Auth Service için ClusterIp oluşturuyoruz
+---- kubectl apply -f services_cluesterip_auth_service.yml
+---- 9090 portunda yayın yapacak.
+------------------------------------
+-- 3- Main Service için ClusterIp oluşturuyoruz
+---- kubectl apply -f services_cluesterip_main_service.yml
+---- 9091 portunda yayın yapacak.
+------------------------------------
+-- 4- User Service için ClusterIp oluşturuyoruz
+---- kubectl apply -f services_cluesterip_user_service.yml
+---- 9092 portunda yayın yapacak.
+------------------------------------
+-- 5- Secret Objesini oluşturuyoruz
+---- kubectl apply -f secret_object.yml
+------------------------------------

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway-service/MicroServices.api-gateway-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway-service/MicroServices.api-gateway-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-service/MicroServices.auth-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-service/MicroServices.auth-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-client-git/MicroServices.config-client-git.main.iml" filepath="$PROJECT_DIR$/.idea/modules/config-client-git/MicroServices.config-client-git.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-server-git/MicroServices.config-server-git.main.iml" filepath="$PROJECT_DIR$/.idea/modules/config-server-git/MicroServices.config-server-git.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-server/MicroServices.config-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/config-server/MicroServices.config-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elastic-service/MicroServices.elastic-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/elastic-service/MicroServices.elastic-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main-service/MicroServices.main-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/main-service/MicroServices.main-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-service/MicroServices.user-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-service/MicroServices.user-service.main.iml" />
+    </modules>
+  </component>
+</project>

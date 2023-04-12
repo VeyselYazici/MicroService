@@ -1,0 +1,34 @@
+#server:
+#  port: 9092
+#
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/YarismaProjesiDBMain
+#    username: postgres
+#    password: 123
+
+server:
+  port: ${main_port}
+
+spring:
+  zipkin:
+    base-url: ${zipkin_url}
+    enabled: true
+    service:
+      name: main-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${db_postgresql_url}
+    username: ${db_postgresql_userName}
+    password: ${db_postgresql_password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+raceapplication:
+  url:
+    auth: ${auth_url}
+    main: ${main_url}
+    user: ${user_url}

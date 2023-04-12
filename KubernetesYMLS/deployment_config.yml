@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: config-deployment
+  labels:
+    team: yarismadevelopersteam
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: config-server
+  template:
+    metadata:
+      labels:
+        app: config-server
+    spec:
+      containers:
+        - image: veyselky/configserver:v100
+          name: podconfig
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu : "0.1"
+            limits:
+              memory: "2Gi"
+              cpu: "250m"
+          ports:
+            - containerPort: 8888
+          env:
+            - name: configserver_port
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: configserver_port
+            - name: zipkin_url
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: zipkin_url
+

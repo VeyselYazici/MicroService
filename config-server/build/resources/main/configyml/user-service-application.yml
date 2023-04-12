@@ -1,0 +1,49 @@
+#server:
+#  port: 9091
+#
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/YarismaProjesiDBUser
+#    username: postgres
+#    password: 123
+
+server:
+  port: ${user_port}
+
+spring:
+  zipkin:
+    base-url: ${zipkin_url}
+    enabled: true
+    service:
+      name: user-service
+  rabbitmq:
+    host: ${rabbitmq_host}
+    port: ${rabbitmq_port}
+    username: ${rabbitmq_userName}
+    password: ${rabbitmq_password}
+  redis:
+    host: ${redis_host}
+    port: ${redis_port}
+  data:
+    mongodb:
+      host: ${db_mongo_url}
+      port: ${db_mongo_port}
+      database: ${db_mongo_database}
+      username: ${db_mongo_userName}
+      password: ${db_mongo_password}
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: ${dbUrl}
+#    username: ${dbUserName}
+#    password: ${dbPassword}
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+raceapplication:
+  url:
+    auth: ${auth_url}
+    main: ${main_url}
+    user: ${user_url}

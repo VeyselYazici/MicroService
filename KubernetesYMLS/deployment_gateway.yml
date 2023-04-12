@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway-deployment
+  labels:
+    team: yarismadevelopersteam
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gateway-service
+  template:
+    metadata:
+      labels:
+        app: gateway-service
+    spec:
+      containers:
+        - image: veyselky/apigatewayserver:v001
+          name: podgateway
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu : "0.1"
+            limits:
+              memory: "2Gi"
+              cpu: "250m"
+          ports:
+            - containerPort: 80
+          env:
+            - name: authUrl
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key:  gateway_auth_url    
+            - name: mainUrl
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key:  gateway_main_url     
+            - name: userUrl
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key:  gateway_user_url        
+                  

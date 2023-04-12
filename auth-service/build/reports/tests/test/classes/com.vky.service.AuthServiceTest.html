@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AuthServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AuthServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.vky.service.html">com.vky.service</a> &gt; AuthServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.862s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">registerTest()</td>
+<td class="success">0.823s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">registerTest2()</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">registerTest3()</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:34:56.334 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:34:56.406 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:34:56.622 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.vky.service.AuthServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:34:56.683 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.vky.service.AuthServiceTest], using SpringBootContextLoader
+16:34:56.701 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.vky.service.AuthServiceTest]: class path resource [com/vky/service/AuthServiceTest-context.xml] does not exist
+16:34:56.703 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.vky.service.AuthServiceTest]: class path resource [com/vky/service/AuthServiceTestContext.groovy] does not exist
+16:34:56.704 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.vky.service.AuthServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:34:56.707 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.vky.service.AuthServiceTest]: AuthServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:34:56.876 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.vky.service.AuthServiceTest]
+16:34:57.132 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\VEYSEL\Desktop\Spring\MicroServices\auth-service\build\classes\java\main\com\vky\AuthServiceApplication.class]
+16:34:57.137 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.vky.AuthServiceApplication for test class com.vky.service.AuthServiceTest
+16:34:57.523 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.vky.service.AuthServiceTest]: using defaults.
+16:34:57.525 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:34:57.603 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@452e26d0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46ab18da, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@790174f2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@42257bdd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7689ddef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@687a762c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1a2e2935, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@733c423e, org.springframework.test.context.event.EventPublishingTestExecutionListener@4b629f13, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@70925b45, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1b9ea3e3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@aa22f1c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@55e7a35c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@37cd92d6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5922ae77]
+16:34:57.614 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1df98368 testClass = AuthServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@21ca139c testClass = AuthServiceTest, locations = '{}', classes = '{class com.vky.AuthServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7cbc3762, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7e7b159b, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1dd6d4b7, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40dff0b7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6f2cfcc2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@18271936], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.3)
+
+2022-10-18 16:35:02.787  INFO [auth-service,,] 11304 --- [    Test worker] com.vky.service.AuthServiceTest          : Starting AuthServiceTest using Java 17.0.4.1 on DESKTOP-4FNHKUV with PID 11304 (started by VEYSEL in C:\Users\VEYSEL\Desktop\Spring\MicroServices\auth-service)
+2022-10-18 16:35:02.791  INFO [auth-service,,] 11304 --- [    Test worker] com.vky.service.AuthServiceTest          : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-10-18 16:35:02.951  INFO [auth-service,,] 11304 --- [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2022-10-18 16:35:02.952  INFO [auth-service,,] 11304 --- [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=auth-service-application-dev, profiles=[default], label=null, version=null, state=null
+2022-10-18 16:35:07.255  INFO [auth-service,,] 11304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-18 16:35:07.638  INFO [auth-service,,] 11304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 347 ms. Found 1 JPA repository interfaces.
+2022-10-18 16:35:08.918  INFO [auth-service,,] 11304 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fdc821ea-d808-3900-87f2-93c97bd95117
+2022-10-18 16:35:12.279  INFO [auth-service,,] 11304 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-18 16:35:12.437  INFO [auth-service,,] 11304 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-18 16:35:13.101  INFO [auth-service,,] 11304 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-18 16:35:13.700  INFO [auth-service,,] 11304 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-18 16:35:14.302  INFO [auth-service,,] 11304 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-18 16:35:14.447  INFO [auth-service,,] 11304 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-10-18 16:35:17.567  INFO [auth-service,,] 11304 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-18 16:35:17.602  INFO [auth-service,,] 11304 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-18 16:35:20.006  WARN [auth-service,,] 11304 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-18 16:35:23.101  INFO [auth-service,,] 11304 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@da51aa8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cd8e702, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b8502e7, org.springframework.security.web.header.HeaderWriterFilter@22ff53d1, org.springframework.security.web.authentication.logout.LogoutFilter@2523730b, com.vky.config.security.JwtTokenFilter@26a2106e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a32be8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b9da2f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28897ca, org.springframework.security.web.session.SessionManagementFilter@33f2ac11, org.springframework.security.web.access.ExceptionTranslationFilter@68032a80, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4dbf902]
+2022-10-18 16:35:28.769  INFO [auth-service,,] 11304 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-18 16:35:28.954  INFO [auth-service,,] 11304 --- [    Test worker] com.vky.service.AuthServiceTest          : Started AuthServiceTest in 31.01 seconds (JVM running for 36.225)
+Bytedata.....: 107
+Integer data.....: 6b
+Bytedata.....: -122
+Integer data.....: 86
+Bytedata.....: -78
+Integer data.....: b2
+Bytedata.....: 115
+Integer data.....: 73
+Bytedata.....: -1
+Integer data.....: ff
+Bytedata.....: 52
+Integer data.....: 34
+Bytedata.....: -4
+Integer data.....: fc
+Bytedata.....: -31
+Integer data.....: e1
+Bytedata.....: -99
+Integer data.....: 9d
+Bytedata.....: 107
+Integer data.....: 6b
+Bytedata.....: -128
+Integer data.....: 80
+Bytedata.....: 78
+Integer data.....: 4e
+Bytedata.....: -1
+Integer data.....: ff
+Bytedata.....: 90
+Integer data.....: 5a
+Bytedata.....: 63
+Integer data.....: 3f
+Bytedata.....: 87
+Integer data.....: 57
+Bytedata.....: 71
+Integer data.....: 47
+Bytedata.....: -83
+Integer data.....: ad
+Bytedata.....: -92
+Integer data.....: a4
+Bytedata.....: -22
+Integer data.....: ea
+Bytedata.....: -94
+Integer data.....: a2
+Bytedata.....: 47
+Integer data.....: 2f
+Bytedata.....: 29
+Integer data.....: 1d
+Bytedata.....: 73
+Integer data.....: 49
+Bytedata.....: -64
+Integer data.....: c0
+Bytedata.....: 30
+Integer data.....: 1e
+Bytedata.....: 82
+Integer data.....: 52
+Bytedata.....: -35
+Integer data.....: dd
+Bytedata.....: -73
+Integer data.....: b7
+Bytedata.....: -121
+Integer data.....: 87
+Bytedata.....: 91
+Integer data.....: 5b
+Bytedata.....: 75
+Integer data.....: 4b
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: insert into tblauth (password, role, user_name, id) values (?, ?, ?, ?)
+2022-10-18 16:35:29.615  INFO [auth-service,,] 11304 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-10-18 16:35:29.753  INFO [auth-service,,] 11304 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#33c5d3e:0/SimpleConnection@602621bb [delegate=amqp://veysel@127.0.0.1:5672/, localPort= 51715]
+Bytedata.....: 107
+Integer data.....: 6b
+Bytedata.....: -122
+Integer data.....: 86
+Bytedata.....: -78
+Integer data.....: b2
+Bytedata.....: 115
+Integer data.....: 73
+Bytedata.....: -1
+Integer data.....: ff
+Bytedata.....: 52
+Integer data.....: 34
+Bytedata.....: -4
+Integer data.....: fc
+Bytedata.....: -31
+Integer data.....: e1
+Bytedata.....: -99
+Integer data.....: 9d
+Bytedata.....: 107
+Integer data.....: 6b
+Bytedata.....: -128
+Integer data.....: 80
+Bytedata.....: 78
+Integer data.....: 4e
+Bytedata.....: -1
+Integer data.....: ff
+Bytedata.....: 90
+Integer data.....: 5a
+Bytedata.....: 63
+Integer data.....: 3f
+Bytedata.....: 87
+Integer data.....: 57
+Bytedata.....: 71
+Integer data.....: 47
+Bytedata.....: -83
+Integer data.....: ad
+Bytedata.....: -92
+Integer data.....: a4
+Bytedata.....: -22
+Integer data.....: ea
+Bytedata.....: -94
+Integer data.....: a2
+Bytedata.....: 47
+Integer data.....: 2f
+Bytedata.....: 29
+Integer data.....: 1d
+Bytedata.....: 73
+Integer data.....: 49
+Bytedata.....: -64
+Integer data.....: c0
+Bytedata.....: 30
+Integer data.....: 1e
+Bytedata.....: 82
+Integer data.....: 52
+Bytedata.....: -35
+Integer data.....: dd
+Bytedata.....: -73
+Integer data.....: b7
+Bytedata.....: -121
+Integer data.....: 87
+Bytedata.....: 91
+Integer data.....: 5b
+Bytedata.....: 75
+Integer data.....: 4b
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: insert into tblauth (password, role, user_name, id) values (?, ?, ?, ?)
+Bytedata.....: 107
+Integer data.....: 6b
+Bytedata.....: -122
+Integer data.....: 86
+Bytedata.....: -78
+Integer data.....: b2
+Bytedata.....: 115
+Integer data.....: 73
+Bytedata.....: -1
+Integer data.....: ff
+Bytedata.....: 52
+Integer data.....: 34
+Bytedata.....: -4
+Integer data.....: fc
+Bytedata.....: -31
+Integer data.....: e1
+Bytedata.....: -99
+Integer data.....: 9d
+Bytedata.....: 107
+Integer data.....: 6b
+Bytedata.....: -128
+Integer data.....: 80
+Bytedata.....: 78
+Integer data.....: 4e
+Bytedata.....: -1
+Integer data.....: ff
+Bytedata.....: 90
+Integer data.....: 5a
+Bytedata.....: 63
+Integer data.....: 3f
+Bytedata.....: 87
+Integer data.....: 57
+Bytedata.....: 71
+Integer data.....: 47
+Bytedata.....: -83
+Integer data.....: ad
+Bytedata.....: -92
+Integer data.....: a4
+Bytedata.....: -22
+Integer data.....: ea
+Bytedata.....: -94
+Integer data.....: a2
+Bytedata.....: 47
+Integer data.....: 2f
+Bytedata.....: 29
+Integer data.....: 1d
+Bytedata.....: 73
+Integer data.....: 49
+Bytedata.....: -64
+Integer data.....: c0
+Bytedata.....: 30
+Integer data.....: 1e
+Bytedata.....: 82
+Integer data.....: 52
+Bytedata.....: -35
+Integer data.....: dd
+Bytedata.....: -73
+Integer data.....: b7
+Bytedata.....: -121
+Integer data.....: 87
+Bytedata.....: 91
+Integer data.....: 5b
+Bytedata.....: 75
+Integer data.....: 4b
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: insert into tblauth (password, role, user_name, id) values (?, ?, ?, ?)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[2022.10.18 16:34:58] (Coverage): Error during class instrumentation: org.springframework.boot.logging.log4j2.Log4J2LoggingSystem: java.lang.RuntimeException: java.io.IOException: Class org/apache/logging/log4j/core/config/composite/CompositeConfiguration not found
+[2022.10.18 16:35:08] (Coverage): Error during class instrumentation: org.springframework.cloud.sleuth.autoconfig.instrument.jdbc.P6SpyConfiguration: java.lang.RuntimeException: java.io.IOException: Class com/p6spy/engine/spy/DefaultJdbcEventListenerFactory not found
+[2022.10.18 16:35:22] (Coverage): Error during class instrumentation: org.springframework.security.config.annotation.authentication.configurers.ldap.LdapAuthenticationProviderConfigurer: java.lang.RuntimeException: java.io.IOException: Class org/springframework/security/ldap/authentication/PasswordComparisonAuthenticator not found
+[2022.10.18 16:35:22] (Coverage): Error during class instrumentation: org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer: java.lang.RuntimeException: java.io.IOException: Class org/springframework/security/oauth2/client/endpoint/DefaultAuthorizationCodeTokenResponseClient not found
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 18 Eki 2022 16:35:31</p>
+</div>
+</div>
+</body>
+</html>

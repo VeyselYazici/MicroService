@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: main-deployment
+  labels:
+    team: yarismadevelopersteam
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: main-service
+  template:
+    metadata:
+      labels:
+        app: main-service
+    spec:
+      containers:
+        - image: veyselky/yarismauygulamasimain:v001
+          name: podmain
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu : "0.1"
+            limits:
+              memory: "2Gi"
+              cpu: "250m"
+          ports:
+            - containerPort: 9091
+          env:
+            - name: main_port
+              valueFrom: 
+                secretKeyRef:
+                  name: yarismasecret
+                  key: main_port
+            - name: db_postgresql_userName
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: db_postgresql_userName
+            - name: db_postgresql_password
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: db_postgresql_password
+            - name: db_postgresql_url
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: db_postgresql_url
+            - name: auth_url
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: auth_url
+            - name: main_url
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: main_url
+            - name: user_url
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: user_url
+            - name: config_server_url
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: config_server_url
+            - name: zipkin_url
+              valueFrom:
+                secretKeyRef:
+                  name: yarismasecret
+                  key: zipkin_url
+                  

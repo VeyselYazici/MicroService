@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: loadbalancer-rabbitmq
+spec:
+  selector:
+#    app: gateway-service
+#    redis: pod-redis
+#    elastic: pod-elasticsearch
+#    app: pod-zipkin
+    app: pod-rabbitmq
+  type: LoadBalancer
+  ports:
+    - name: rabbitmq
+      port: 5672
+      targetPort: 5672
+    - name: rabbit-manage
+      port: 15672
+      targetPort: 15672
